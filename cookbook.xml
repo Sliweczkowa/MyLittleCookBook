@@ -1,0 +1,128 @@
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Simple XML project created for learning purposes -->
+
+<cookbook>
+    <recipe recipeID="r00001">
+        <dishInfo>
+            <dishName>Snickerdoodles</dishName>
+            <dishType>vegetarian</dishType>
+            <!-- carnivore/vegetarian/vegan -->
+            <prepTime timeUnit="h">2</prepTime>
+            <bakingTime timeUnit="min">15</bakingTime>
+            <bakingTemp tempUnit="°C">180</bakingTemp>
+            <dishQuantity>30</dishQuantity>
+            <dishSource>https://mojewypieki.com/przepis/snickerdoodles</dishSource>
+        </dishInfo>
+
+        <dishChangeable>
+            <lastDateMade>31.08.2023</lastDateMade>
+            <!-- <dishCost costUnit="zl"></dishCost> -->
+        </dishChangeable>
+
+        <ingredients>
+            <ingredient>
+                <ingredientName>Wheat flour</ingredientName>
+                <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Nutmeg</ingredientName>
+                <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Baking powder</ingredientName>
+                <ingredientQuantity quantityUnit="teaspoon">0.75</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Salt</ingredientName>
+                <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Butter</ingredientName>
+                <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Sugar</ingredientName>
+                <ingredientQuantity quantityUnit="g">100</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Egg</ingredientName>
+                <ingredientQuantity quantityUnit="ea">1</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Vanilla extract</ingredientName>
+                <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
+            </ingredient>
+            <ingredient>
+                <ingredientName>Cinnamon</ingredientName>
+                <ingredientQuantity quantityUnit="spoon">1</ingredientQuantity>
+            </ingredient>
+        </ingredients>
+    </recipe>
+
+    <ingredients>
+        <ingredient ingredientID="i00001" isAllergen="yes">
+            <ingredientName>Wheat flour</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>350</ingredientCalories>
+            <ingredientCost costUnit="zl">3.48</ingredientCost>
+            <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00002" isAllergen="no">
+            <ingredientName>Nutmeg</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>52.5</ingredientCalories>
+            <ingredientCost costUnit="zl">1.48</ingredientCost>
+            <ingredientQuantity quantityUnit="g">10</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00003" isAllergen="no">
+            <ingredientName>Baking powder</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>9.3</ingredientCalories>
+            <ingredientCost costUnit="zl">0.79</ingredientCost>
+            <ingredientQuantity quantityUnit="g">15</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00004" isAllergen="no">
+            <ingredientName>Salt</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>0</ingredientCalories>
+            <ingredientCost costUnit="zl">5.48</ingredientCost>
+            <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00005" isAllergen="yes">
+            <ingredientName>Butter</ingredientName>
+            <ingredientType>vegetarian</ingredientType>
+            <ingredientCalories>1506</ingredientCalories>
+            <ingredientCost costUnit="zl">5.99</ingredientCost>
+            <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00006" isAllergen="no">
+            <ingredientName>Sugar</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>400</ingredientCalories>
+            <ingredientCost costUnit="zl">5.78</ingredientCost>
+            <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00007" isAllergen="yes">
+            <ingredientName>Egg</ingredientName>
+            <ingredientType>vegetarian</ingredientType>
+            <ingredientCalories>760</ingredientCalories>
+            <ingredientCost costUnit="zl">10.99</ingredientCost>
+            <ingredientQuantity quantityUnit="ea">10</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00008" isAllergen="no">
+            <ingredientName>Vanilla extract</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>86.4</ingredientCalories>
+            <ingredientCost costUnit="zl">7.48</ingredientCost>
+            <ingredientQuantity quantityUnit="ml">30</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00009" isAllergen="no">
+            <ingredientName>Cinnamon</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>37.1</ingredientCalories>
+            <ingredientCost costUnit="zl">1.48</ingredientCost>
+            <ingredientQuantity quantityUnit="g">15</ingredientQuantity>
+        </ingredient>
+    </ingredients>
+</cookbook>
