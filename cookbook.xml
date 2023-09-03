@@ -2,6 +2,12 @@
 <!-- Simple XML project created for learning purposes -->
 
 <cookbook>
+    <pageInfo>
+        <authorName>Wiktoria Śliwińska</authorName>
+        <authorGitHub>@Sliweczkowa</authorGitHub>
+        <lastModificationDate>03.09.2023</lastModificationDate>
+    </pageInfo>
+
     <recipes>
         <recipe recipeID="r00001">
             <dishInfo>
