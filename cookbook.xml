@@ -100,6 +100,61 @@
                 </ingredient>
             </ingredients>
         </recipe>
+
+        <recipe recipeID="r00003">
+            <dishInfo>
+                <dishName>Cotton Japanese Cheesecake</dishName>
+                <dishType>vegetarian</dishType>
+                <prepTime timeUnit="h">2</prepTime>
+                <bakingTime timeUnit="min">25</bakingTime>
+                <bakingTemp tempUnit="°C">140</bakingTemp>
+                <dishQuantity>6</dishQuantity>
+                <dishSource>https://www.youtube.com/watch?v=DueW3q1AFoM&amp;t=672s</dishSource>
+            </dishInfo>
+
+            <dishChangeable>
+                <lastDateMade>03.07.2023</lastDateMade>
+            </dishChangeable>
+
+            <ingredients>
+                <ingredient>
+                    <ingredientName>Biscuit</ingredientName>
+                    <ingredientQuantity quantityUnit="ea">6</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Butter</ingredientName>
+                    <ingredientQuantity quantityUnit="g">70</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Philadelphia</ingredientName>
+                    <ingredientQuantity quantityUnit="g">110</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Milk</ingredientName>
+                    <ingredientQuantity quantityUnit="ml">75</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Egg</ingredientName>
+                    <ingredientQuantity quantityUnit="ea">3</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Wheat flour</ingredientName>
+                    <ingredientQuantity quantityUnit="g">30</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Potato starch</ingredientName>
+                    <ingredientQuantity quantityUnit="g">20</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Sugar</ingredientName>
+                    <ingredientQuantity quantityUnit="g">60</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Vanilla extract</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
+                </ingredient>
+            </ingredients>
+        </recipe>
     </recipes>
 
 
@@ -174,6 +229,34 @@
             <ingredientCalories>446.4</ingredientCalories>
             <ingredientCost costUnit="zl">3.98</ingredientCost>
             <ingredientQuantity quantityUnit="g">80</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00011" isAllergen="yes">
+            <ingredientName>Biscuit</ingredientName>
+            <ingredientType>vegetarian</ingredientType>
+            <ingredientCalories>968</ingredientCalories>
+            <ingredientCost costUnit="zl">2.68</ingredientCost>
+            <ingredientQuantity quantityUnit="g">220</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00012" isAllergen="yes">
+            <ingredientName>Philadelphia</ingredientName>
+            <ingredientType>vegetarian</ingredientType>
+            <ingredientCalories>282.5</ingredientCalories>
+            <ingredientCost costUnit="zl">7.48</ingredientCost>
+            <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00013" isAllergen="yes">
+            <ingredientName>Milk</ingredientName>
+            <ingredientType>vegetarian</ingredientType>
+            <ingredientCalories>600</ingredientCalories>
+            <ingredientCost costUnit="zl">3.98</ingredientCost>
+            <ingredientQuantity quantityUnit="l">1</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00014" isAllergen="no">
+            <ingredientName>Potato starch</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>1620</ingredientCalories>
+            <ingredientCost costUnit="zl">4.29</ingredientCost>
+            <ingredientQuantity quantityUnit="kg">0.5</ingredientQuantity>
         </ingredient>
     </ingredients>
 </cookbook>
