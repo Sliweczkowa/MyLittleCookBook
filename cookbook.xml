@@ -3,62 +3,106 @@
 <!-- Simple XML project created for learning purposes -->
 
 <cookbook>
-    <recipe recipeID="r00001">
-        <dishInfo>
-            <dishName>Snickerdoodles</dishName>
-            <dishType>vegetarian</dishType>
-            <!-- carnivore/vegetarian/vegan -->
-            <prepTime timeUnit="h">2</prepTime>
-            <bakingTime timeUnit="min">15</bakingTime>
-            <bakingTemp tempUnit="°C">180</bakingTemp>
-            <dishQuantity>30</dishQuantity>
-            <dishSource>https://mojewypieki.com/przepis/snickerdoodles</dishSource>
-        </dishInfo>
+    <recipes>
+        <recipe recipeID="r00001">
+            <dishInfo>
+                <dishName>Snickerdoodles</dishName>
+                <dishType>vegetarian</dishType>
+                <!-- carnivore/vegetarian/vegan -->
+                <prepTime timeUnit="h">2</prepTime>
+                <bakingTime timeUnit="min">15</bakingTime>
+                <bakingTemp tempUnit="°C">180</bakingTemp>
+                <dishQuantity>30</dishQuantity>
+                <dishSource>https://mojewypieki.com/przepis/snickerdoodles</dishSource>
+            </dishInfo>
 
-        <dishChangeable>
-            <lastDateMade>31.08.2023</lastDateMade>
-            <!-- <dishCost costUnit="zl"></dishCost> -->
-        </dishChangeable>
+            <dishChangeable>
+                <lastDateMade>31.08.2023</lastDateMade>
+                <!-- <dishCost costUnit="zl"></dishCost> -->
+            </dishChangeable>
 
-        <ingredients>
-            <ingredient>
-                <ingredientName>Wheat flour</ingredientName>
-                <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Nutmeg</ingredientName>
-                <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Baking powder</ingredientName>
-                <ingredientQuantity quantityUnit="teaspoon">0.75</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Salt</ingredientName>
-                <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Butter</ingredientName>
-                <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Sugar</ingredientName>
-                <ingredientQuantity quantityUnit="g">100</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Egg</ingredientName>
-                <ingredientQuantity quantityUnit="ea">1</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Vanilla extract</ingredientName>
-                <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
-            </ingredient>
-            <ingredient>
-                <ingredientName>Cinnamon</ingredientName>
-                <ingredientQuantity quantityUnit="spoon">1</ingredientQuantity>
-            </ingredient>
-        </ingredients>
-    </recipe>
+            <ingredients>
+                <ingredient>
+                    <ingredientName>Wheat flour</ingredientName>
+                    <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Nutmeg</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Baking powder</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">0.75</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Salt</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Butter</ingredientName>
+                    <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Sugar</ingredientName>
+                    <ingredientQuantity quantityUnit="g">100</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Egg</ingredientName>
+                    <ingredientQuantity quantityUnit="ea">1</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Vanilla extract</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Cinnamon</ingredientName>
+                    <ingredientQuantity quantityUnit="spoon">1</ingredientQuantity>
+                </ingredient>
+            </ingredients>
+        </recipe>
+
+        <recipe recipeID="r00002">
+            <dishInfo>
+                <dishName>Brownie</dishName>
+                <dishType>vegetarian</dishType>
+                <!-- carnivore/vegetarian/vegan -->
+                <prepTime timeUnit="h">2</prepTime>
+                <bakingTime timeUnit="min">30</bakingTime>
+                <bakingTemp tempUnit="°C">160</bakingTemp>                <dishQuantity>30</dishQuantity>
+                <dishQuantity>20</dishQuantity>
+                <dishSource>https://www.kwestiasmaku.com/desery/ciasta/czekoladowe_brownie/przepis.html</dishSource>
+            </dishInfo>
+
+            <ingredients>
+                <ingredient>
+                    <ingredientName>Butter</ingredientName>
+                    <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Dark chocolate</ingredientName>
+                    <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Egg</ingredientName>
+                    <ingredientQuantity quantityUnit="ea">3</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Sugar</ingredientName>
+                    <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Wheat flour</ingredientName>
+                    <ingredientQuantity quantityUnit="g">135</ingredientQuantity>
+                </ingredient>
+                <ingredient>
+                    <ingredientName>Salt</ingredientName>
+                    <ingredientQuantity quantityUnit="teaspoon">0.1</ingredientQuantity>
+                </ingredient>
+            </ingredients>
+        </recipe>
+    </recipes>
+
+
 
     <ingredients>
         <ingredient ingredientID="i00001" isAllergen="yes">
@@ -123,6 +167,13 @@
             <ingredientCalories>37.1</ingredientCalories>
             <ingredientCost costUnit="zl">1.48</ingredientCost>
             <ingredientQuantity quantityUnit="g">15</ingredientQuantity>
+        </ingredient>
+        <ingredient ingredientID="i00010" isAllergen="yes">
+            <ingredientName>Dark chocolate</ingredientName>
+            <ingredientType>vegan</ingredientType>
+            <ingredientCalories>446.4</ingredientCalories>
+            <ingredientCost costUnit="zl">3.98</ingredientCost>
+            <ingredientQuantity quantityUnit="g">80</ingredientQuantity>
         </ingredient>
     </ingredients>
 </cookbook>
