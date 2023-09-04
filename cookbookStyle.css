@@ -164,17 +164,17 @@ cookbook pageContent ingredients ingredient ingredientCalories::before
 	content: "Kcal: ";
 }
 
-cookbook pageContent ingredients ingredient ingredientCost::before
+cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredientCost::before
 {
 	content: "Price: ";
 }
 
-cookbook pageContent ingredients ingredient ingredientCost::after
+cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredientCost::after
 {
 	content: attr(costUnit) "/";
 }
 
-cookbook pageContent ingredients ingredient ingredientQuantity::after
+cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredientQuantity::after
 {
 	content: attr(quantityUnit);
 }
