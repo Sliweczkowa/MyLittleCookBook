@@ -1,0 +1,180 @@
+cookbook
+{
+	display: table;
+	width: 100%;
+}
+
+
+/* pageInfo */
+
+cookbook pageInfo
+{
+	display: table-header-group;
+}
+
+cookbook pageInfo *
+{
+	display: block;
+}
+
+cookbook pageInfo authorName
+{
+    display: none;
+}
+
+cookbook pageInfo authorGitHub::before
+{
+    content: "Created by: ";
+}
+
+cookbook pageInfo lastModificationDate::before
+{
+    content: "Last modified: ";
+}
+
+
+/* pageContent - recipes */
+
+cookbook pageContent
+{
+	display: table-row-group;
+}
+
+cookbook pageContent recipes
+{
+	display: table;
+    padding: 10px;
+}
+
+cookbook pageContent recipes recipe
+{
+	display: table-cell;
+    padding: 5px;
+}
+
+cookbook pageContent recipes recipe dishInfo *, cookbook pageContent recipes recipe dishChangeable *
+{
+	display: block;
+}
+
+cookbook pageContent recipes recipe dishInfo dishType::before
+{
+	content: "Dish type: ";
+}
+
+cookbook pageContent recipes recipe dishInfo prepTime::before
+{
+	content: "Preparation time: ";
+}
+
+cookbook pageContent recipes recipe dishInfo bakingTime::before
+{
+	content: "Baking time: ";
+}
+
+cookbook pageContent recipes recipe dishInfo prepTime::after, cookbook pageContent recipes recipe dishInfo bakingTime::after
+{
+	content: attr(timeUnit);
+}
+
+cookbook pageContent recipes recipe dishInfo bakingTemp::before
+{
+	content: "Baking temperature: ";
+}
+
+cookbook pageContent recipes recipe dishInfo bakingTemp::after
+{
+	content: attr(tempUnit);
+}
+
+cookbook pageContent recipes recipe dishInfo dishQuantity::before
+{
+	content: "Portions: ";
+}
+
+cookbook pageContent recipes recipe dishChangeable lastDateMade::before
+{
+	content: "Lastly made: ";
+}
+
+cookbook pageContent recipes recipe dishIngredients
+{
+    counter-reset: list-number;
+}
+
+cookbook pageContent recipes recipe dishIngredients::before
+{
+    content: "Ingredients:";
+    display: block;
+}
+
+cookbook pageContent recipes recipe dishIngredients ingredient
+{
+    display: block;
+    counter-increment: list-number;
+}
+
+cookbook pageContent recipes recipe dishIngredients ingredient ingredientName::before
+{
+    content: counter(list-number) ". ";
+}
+
+cookbook pageContent recipes recipe dishIngredients ingredient ingredientName::after
+{
+    content: " - ";
+}
+
+cookbook pageContent recipes recipe dishIngredients ingredient ingredientQuantity::after
+{
+    content: attr(quantityUnit);
+}
+
+
+/* pageContent - ingredients */
+
+cookbook pageContent ingredients
+{
+	display: table;
+    padding: 10px;
+}
+
+cookbook pageContent ingredients ingredient
+{
+	display: table-cell;
+    padding: 5px;
+}
+
+cookbook pageContent ingredients ingredient ingredientName, cookbook pageContent ingredients ingredient ingredientType, cookbook pageContent ingredients ingredient ingredientCalories
+{
+	display: block;
+}
+
+cookbook pageContent ingredients ingredient[isAllergen="yes"] ingredientName
+{
+    text-decoration: underline;
+}
+
+cookbook pageContent ingredients ingredient ingredientType::before
+{
+	content: "Ingredient type: ";
+}
+
+cookbook pageContent ingredients ingredient ingredientCalories::before
+{
+	content: "Kcal: ";
+}
+
+cookbook pageContent ingredients ingredient ingredientCost::before
+{
+	content: "Price: ";
+}
+
+cookbook pageContent ingredients ingredient ingredientCost::after
+{
+	content: attr(costUnit) "/";
+}
+
+cookbook pageContent ingredients ingredient ingredientQuantity::after
+{
+	content: attr(quantityUnit);
+}
