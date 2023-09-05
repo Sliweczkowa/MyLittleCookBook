@@ -1,0 +1,40 @@
+<!ELEMENT cookbook (pageInfo,pageContent)>
+<!ELEMENT pageInfo (authorName, authorGitHub, lastModificationDate)>
+    <!ELEMENT authorName (#PCDATA)>
+    <!ELEMENT authorGitHub (#PCDATA)>
+    <!ELEMENT lastModificationDate (#PCDATA)>
+<!ELEMENT pageContent (recipes, ingredients)>
+    <!ELEMENT recipes (recipe*)>
+        <!ELEMENT recipe (dishInfo, dishChangeable?, dishIngredients?)>
+        <!ATTLIST recipe recipeID CDATA #REQUIRED>
+            <!ELEMENT dishInfo (dishName, dishType, prepTime, bakingTime, bakingTemp, dishQuantity, dishSource)>
+                <!ELEMENT dishName (#PCDATA)>
+                <!ELEMENT dishType (#PCDATA)>
+                <!ELEMENT prepTime (#PCDATA)>
+                    <!ATTLIST prepTime unit (min|h) #REQUIRED>
+                <!ELEMENT bakingTime (#PCDATA)>
+                    <!ATTLIST bakingTime unit (min|h) #REQUIRED>
+                <!ELEMENT bakingTemp (#PCDATA)>
+                    <!ATTLIST bakingTemp unit CDATA #REQUIRED>
+                <!ELEMENT dishQuantity (#PCDATA)>
+                <!ELEMENT dishSource (#PCDATA)>
+            <!ELEMENT dishChangeable (lastDateMade?)>
+                <!ELEMENT lastDateMade (#PCDATA)>
+            <!ELEMENT dishIngredients (dishIngredient*)>
+                <!ELEMENT dishIngredient (dishIngredientName, dishIngredientQuantity)>
+                <!ATTLIST dishIngredient dishIngredientID CDATA #REQUIRED>
+                    <!ELEMENT dishIngredientName (#PCDATA)>
+                    <!ELEMENT dishIngredientQuantity (#PCDATA)>
+                        <!ATTLIST dishIngredientQuantity unit (g|kg|ml|l|teaspoon|spoon|ea) #REQUIRED>
+    <!ELEMENT ingredients (ingredient*)>
+    <!ELEMENT ingredient (ingredientName, ingredientType, ingredientCalories?, ingredientCostPerQuantity*)>
+        <!ATTLIST ingredient ingredientID CDATA #REQUIRED>
+        <!ATTLIST ingredient isAllergen (yes|no) #REQUIRED>
+        <!ELEMENT ingredientName (#PCDATA)>
+        <!ELEMENT ingredientType (#PCDATA)>
+        <!ELEMENT ingredientCalories (#PCDATA)>
+        <!ELEMENT ingredientCostPerQuantity (ingredientCost, ingredientQuantity)>
+            <!ELEMENT ingredientCost (#PCDATA)>
+                <!ATTLIST ingredientCost unit (zl|eur) #REQUIRED>
+            <!ELEMENT ingredientQuantity (#PCDATA)>
+                <!ATTLIST ingredientQuantity unit (g|kg|ml|l|teaspoon|spoon|ea) #REQUIRED>
