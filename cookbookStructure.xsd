@@ -7,13 +7,13 @@
 
     <xs:element name="pageInfo">
     <xs:complexType>
-    <xs:sequence>
+    <xs:all>
 
         <xs:element name="authorName" type="xs:string"/>
         <xs:element name="authorGitHub" type="xs:string"/>
         <xs:element name="lastModificationDate" type="xs:date"/>
 
-    </xs:sequence>
+    </xs:all>
     </xs:complexType>
     </xs:element>
 
@@ -36,12 +36,12 @@
                     <xs:element name="dishName" type="xs:string"/>
                     <xs:element name="dishType" type="xs:string"/>
 
-                    <xs:element name="prepTime">
+                    <xs:element name="prepTime" minOccurs="0">
                     <xs:complexType>
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="timeUnit">
+                        <xs:attribute name="timeUnit" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="min|h"/>
@@ -59,7 +59,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="timeUnit">
+                        <xs:attribute name="timeUnit" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="min|h"/>
@@ -77,7 +77,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="tempUnit">
+                        <xs:attribute name="tempUnit" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="°C|F"/>
@@ -90,9 +90,9 @@
                     </xs:complexType>
                     </xs:element>
 
-                    <xs:element name="dishQuantity" type="xs:integer"/>
+                    <xs:element name="dishQuantity" type="xs:integer" minOccurs="0"/>
 
-                    <xs:element name="dishSource">
+                    <xs:element name="dishSource" minOccurs="0">
                     <xs:simpleType>
                     <xs:restriction base="xs:string">
                     <xs:pattern value="https?:\/\/\S+"/>
@@ -114,7 +114,7 @@
                 </xs:complexType>   
                 </xs:element>
 
-                <xs:element name="dishIngredients">
+                <xs:element name="dishIngredients" minOccurs="0">
                 <xs:complexType>
                 <xs:sequence>
 
@@ -129,7 +129,7 @@
                         <xs:simpleContent>
                         <xs:extension base="xs:decimal">
 
-                            <xs:attribute name="quantityUnit">
+                            <xs:attribute name="quantityUnit" use="required">
                             <xs:simpleType>
                             <xs:restriction base="xs:string">
                             <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
@@ -144,7 +144,7 @@
 
                     </xs:sequence>
 
-                        <xs:attribute name="dishIngredientID">
+                        <xs:attribute name="dishIngredientID" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="i\d{5}"/>
@@ -167,10 +167,6 @@
                 <xs:pattern value="r\d{5}"/>
                 </xs:restriction>
                 </xs:simpleType>
-                <!--
-                <xs:selector xpath="ingredient"/>
-                <xs:field xpath=""/>
-                -->
                 </xs:attribute>
 
             </xs:complexType>
@@ -180,7 +176,7 @@
         </xs:complexType>
         </xs:element>
 
-        <xs:element name="ingredients">
+        <xs:element name="ingredients" minOccurs="0">
         <xs:complexType>
         <xs:sequence>
 
@@ -190,9 +186,9 @@
 
                 <xs:element name="ingredientName" type="xs:string"/>
                 <xs:element name="ingredientType" type="xs:string"/>
-                <xs:element name="ingredientCalories" type="xs:decimal"/>
+                <xs:element name="ingredientCalories" type="xs:decimal" minOccurs="0"/>
 
-                <xs:element name="ingredientCostPerQuantity">
+                <xs:element name="ingredientCostPerQuantity" minOccurs="0" maxOccurs="unbounded">
                 <xs:complexType>
                 <xs:sequence>
 
@@ -201,7 +197,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:decimal">
                     
-                        <xs:attribute name="costUnit">
+                        <xs:attribute name="costUnit" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="zl|eur"/>
@@ -219,7 +215,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:decimal">
 
-                        <xs:attribute name="quantityUnit">
+                        <xs:attribute name="quantityUnit" use="required">
                         <xs:simpleType>
                         <xs:restriction base="xs:string">
                         <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
@@ -238,7 +234,7 @@
 
             </xs:sequence>
 
-                <xs:attribute name="ingredientID">
+                <xs:attribute name="ingredientID" use="required">
                 <xs:simpleType>
                 <xs:restriction base="xs:string">
                 <xs:pattern value="i\d{5}"/>
@@ -246,7 +242,7 @@
                 </xs:simpleType>
                 </xs:attribute>
 
-                <xs:attribute name="isAllergen">
+                <xs:attribute name="isAllergen" use="required">
                 <xs:simpleType>
                 <xs:restriction base="xs:string">
                 <xs:pattern value="yes|no"/>
