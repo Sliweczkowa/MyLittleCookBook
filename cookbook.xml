@@ -17,7 +17,6 @@
                 <dishInfo>
                     <dishName>Snickerdoodles</dishName>
                     <dishType>vegetarian</dishType>
-                    <!-- carnivore/vegetarian/vegan -->
                     <prepTime unit="h">2</prepTime>
                     <bakingTime unit="min">15</bakingTime>
                     <bakingTemp unit="°C">180</bakingTemp>
