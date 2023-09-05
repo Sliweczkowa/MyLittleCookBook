@@ -108,23 +108,23 @@ cookbook pageContent recipes recipe dishIngredients::before
     display: block;
 }
 
-cookbook pageContent recipes recipe dishIngredients ingredient
+cookbook pageContent recipes recipe dishIngredients dishIngredient
 {
     display: block;
     counter-increment: list-number;
 }
 
-cookbook pageContent recipes recipe dishIngredients ingredient ingredientName::before
+cookbook pageContent recipes recipe dishIngredients dishIngredient dishIngredientName::before
 {
     content: counter(list-number) ". ";
 }
 
-cookbook pageContent recipes recipe dishIngredients ingredient ingredientName::after
+cookbook pageContent recipes recipe dishIngredients dishIngredient dishIngredientName::after
 {
     content: " - ";
 }
 
-cookbook pageContent recipes recipe dishIngredients ingredient ingredientQuantity::after
+cookbook pageContent recipes recipe dishIngredients dishIngredient dishIngredientQuantity::after
 {
     content: attr(unit);
 }

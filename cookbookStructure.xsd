@@ -100,13 +100,13 @@
                 <xs:complexType>
                 <xs:sequence>
 
-                    <xs:element name="ingredient" minOccurs="0" maxOccurs="unbounded">
+                    <xs:element name="dishIngredient" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                     <xs:sequence>
 
-                        <xs:element name="ingredientName" type="xs:string"/>
+                        <xs:element name="dishIngredientName" type="xs:string"/>
 
-                        <xs:element name="ingredientQuantity">
+                        <xs:element name="dishIngredientQuantity">
                         <xs:complexType>
                         <xs:simpleContent>
                         <xs:extension base="xs:decimal">

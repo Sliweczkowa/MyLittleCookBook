@@ -3,6 +3,7 @@
 
 <?xml-stylesheet type="text/css" href="cookbookStyle.css"?>
 <?xml-stylesheet type="text/xsl" href="cookbookStructure.xsl"?>
+<!--<!DOCTYPE cookbook SYSTEM "cookbookStructure.dtd">-->
 
 <cookbook>
     <pageInfo>
@@ -30,42 +31,42 @@
                 </dishChangeable>
 
                 <dishIngredients>
-                    <ingredient dishIngredientID="i00001">
-                        <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity unit="g">250</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00002">
-                        <ingredientName>Nutmeg</ingredientName>
-                        <ingredientQuantity unit="teaspoon">0.5</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00003">
-                        <ingredientName>Baking powder</ingredientName>
-                        <ingredientQuantity unit="teaspoon">0.75</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00004">
-                        <ingredientName>Salt</ingredientName>
-                        <ingredientQuantity unit="teaspoon">0.5</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00005">
-                        <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity unit="g">125</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00006">
-                        <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity unit="g">100</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00007">
-                        <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity unit="ea">1</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00008">
-                        <ingredientName>Vanilla extract</ingredientName>
-                        <ingredientQuantity unit="teaspoon">1</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00009">
-                        <ingredientName>Cinnamon</ingredientName>
-                        <ingredientQuantity unit="spoon">1</ingredientQuantity>
-                    </ingredient>
+                    <dishIngredient dishIngredientID="i00001">
+                        <dishIngredientName>Wheat flour</dishIngredientName>
+                        <dishIngredientQuantity unit="g">250</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00002">
+                        <dishIngredientName>Nutmeg</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">0.5</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00003">
+                        <dishIngredientName>Baking powder</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">0.75</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00004">
+                        <dishIngredientName>Salt</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">0.5</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00005">
+                        <dishIngredientName>Butter</dishIngredientName>
+                        <dishIngredientQuantity unit="g">125</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00006">
+                        <dishIngredientName>Sugar</dishIngredientName>
+                        <dishIngredientQuantity unit="g">100</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00007">
+                        <dishIngredientName>Egg</dishIngredientName>
+                        <dishIngredientQuantity unit="ea">1</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00008">
+                        <dishIngredientName>Vanilla extract</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">1</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00009">
+                        <dishIngredientName>Cinnamon</dishIngredientName>
+                        <dishIngredientQuantity unit="spoon">1</dishIngredientQuantity>
+                    </dishIngredient>
                 </dishIngredients>
             </recipe>
 
@@ -82,30 +83,30 @@
                 </dishInfo>
 
                 <dishIngredients>
-                    <ingredient dishIngredientID="i00005">
-                        <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity unit="g">200</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00010">
-                        <ingredientName>Dark chocolate</ingredientName>
-                        <ingredientQuantity unit="g">200</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00007">
-                        <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity unit="ea">3</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00006">
-                        <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity unit="g">250</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00001">
-                        <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity unit="g">135</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00004">
-                        <ingredientName>Salt</ingredientName>
-                        <ingredientQuantity unit="teaspoon">0.1</ingredientQuantity>
-                    </ingredient>
+                    <dishIngredient dishIngredientID="i00005">
+                        <dishIngredientName>Butter</dishIngredientName>
+                        <dishIngredientQuantity unit="g">200</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00010">
+                        <dishIngredientName>Dark chocolate</dishIngredientName>
+                        <dishIngredientQuantity unit="g">200</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00007">
+                        <dishIngredientName>Egg</dishIngredientName>
+                        <dishIngredientQuantity unit="ea">3</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00006">
+                        <dishIngredientName>Sugar</dishIngredientName>
+                        <dishIngredientQuantity unit="g">250</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00001">
+                        <dishIngredientName>Wheat flour</dishIngredientName>
+                        <dishIngredientQuantity unit="g">135</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00004">
+                        <dishIngredientName>Salt</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">0.1</dishIngredientQuantity>
+                    </dishIngredient>
                 </dishIngredients>
             </recipe>
 
@@ -125,42 +126,42 @@
                 </dishChangeable>
 
                 <dishIngredients>
-                    <ingredient dishIngredientID="i00011">
-                        <ingredientName>Biscuit</ingredientName>
-                        <ingredientQuantity unit="ea">6</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00005">
-                        <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity unit="g">70</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00012">
-                        <ingredientName>Philadelphia</ingredientName>
-                        <ingredientQuantity unit="g">110</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00013">
-                        <ingredientName>Milk</ingredientName>
-                        <ingredientQuantity unit="ml">75</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00007">
-                        <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity unit="ea">3</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00001">
-                        <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity unit="g">30</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00014">
-                        <ingredientName>Potato starch</ingredientName>
-                        <ingredientQuantity unit="g">20</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00006">
-                        <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity unit="g">60</ingredientQuantity>
-                    </ingredient>
-                    <ingredient dishIngredientID="i00008">
-                        <ingredientName>Vanilla extract</ingredientName>
-                        <ingredientQuantity unit="teaspoon">1</ingredientQuantity>
-                    </ingredient>
+                    <dishIngredient dishIngredientID="i00011">
+                        <dishIngredientName>Biscuit</dishIngredientName>
+                        <dishIngredientQuantity unit="ea">6</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00005">
+                        <dishIngredientName>Butter</dishIngredientName>
+                        <dishIngredientQuantity unit="g">70</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00012">
+                        <dishIngredientName>Philadelphia</dishIngredientName>
+                        <dishIngredientQuantity unit="g">110</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00013">
+                        <dishIngredientName>Milk</dishIngredientName>
+                        <dishIngredientQuantity unit="ml">75</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00007">
+                        <dishIngredientName>Egg</dishIngredientName>
+                        <dishIngredientQuantity unit="ea">3</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00001">
+                        <dishIngredientName>Wheat flour</dishIngredientName>
+                        <dishIngredientQuantity unit="g">30</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00014">
+                        <dishIngredientName>Potato starch</dishIngredientName>
+                        <dishIngredientQuantity unit="g">20</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00006">
+                        <dishIngredientName>Sugar</dishIngredientName>
+                        <dishIngredientQuantity unit="g">60</dishIngredientQuantity>
+                    </dishIngredient>
+                    <dishIngredient dishIngredientID="i00008">
+                        <dishIngredientName>Vanilla extract</dishIngredientName>
+                        <dishIngredientQuantity unit="teaspoon">1</dishIngredientQuantity>
+                    </dishIngredient>
                 </dishIngredients>
             </recipe>
         </recipes>
