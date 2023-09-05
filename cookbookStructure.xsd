@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="cookbook">
+<xs:complexType>
+<xs:sequence>
+
+    <xs:element name="pageInfo">
+    <xs:complexType>
+    <xs:sequence>
+
+        <xs:element name="authorName" type="xs:string"/>
+        <xs:element name="authorGitHub" type="xs:string"/>
+        <xs:element name="lastModificationDate" type="xs:date"/>
+
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pageContent">
+    <xs:complexType>
+    <xs:sequence>
+
+        <xs:element name="recipes">
+        <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="recipe" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="dishInfo">
+                <xs:complexType>
+                <xs:sequence>
+
+                    <xs:element name="dishName" type="xs:string"/>
+                    <xs:element name="dishType" type="xs:string"/>
+
+                    <xs:element name="prepTime">
+                    <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+
+                        <xs:attribute name="timeUnit">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="min|h"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:extension>
+                    </xs:simpleContent>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="bakingTime">
+                    <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+
+                        <xs:attribute name="timeUnit">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="min|h"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:extension>
+                    </xs:simpleContent>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="bakingTemp">
+                    <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base="xs:integer">
+
+                        <xs:attribute name="tempUnit">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="°C|F"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:extension>
+                    </xs:simpleContent>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="dishQuantity" type="xs:integer"/>
+
+                    <xs:element name="dishSource">
+                    <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                    <xs:pattern value="https?:\/\/\S+"/>
+                    </xs:restriction>
+                    </xs:simpleType>
+                    </xs:element>
+
+                </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+
+                <xs:element name="dishChangeable" minOccurs="0">
+                <xs:complexType>
+                <xs:sequence>
+
+                    <xs:element name="lastDateMade" type="xs:date" minOccurs="0"/>
+
+                </xs:sequence>
+                </xs:complexType>   
+                </xs:element>
+
+                <xs:element name="dishIngredients">
+                <xs:complexType>
+                <xs:sequence>
+
+                    <xs:element name="ingredient" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                    <xs:sequence>
+
+                        <xs:element name="ingredientName" type="xs:string"/>
+
+                        <xs:element name="ingredientQuantity">
+                        <xs:complexType>
+                        <xs:simpleContent>
+                        <xs:extension base="xs:decimal">
+
+                            <xs:attribute name="quantityUnit">
+                            <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                            <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
+                            </xs:restriction>
+                            </xs:simpleType>
+                            </xs:attribute>
+
+                        </xs:extension>
+                        </xs:simpleContent>
+                        </xs:complexType>
+                        </xs:element>
+
+                    </xs:sequence>
+                    </xs:complexType>
+                    </xs:element>
+
+                </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+
+                <xs:attribute name="recipeID" use="required">
+                <xs:simpleType>
+                <xs:restriction base="xs:string">
+                <xs:pattern value="r\d{5}"/>
+                </xs:restriction>
+                </xs:simpleType>
+                <!--
+                <xs:selector xpath="ingredient"/>
+                <xs:field xpath=""/>
+                -->
+                </xs:attribute>
+
+            </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+        <xs:element name="ingredients">
+        <xs:complexType>
+        <xs:sequence>
+
+            <xs:element name="ingredient" minOccurs="0" maxOccurs="unbounded">
+            <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="ingredientName" type="xs:string"/>
+                <xs:element name="ingredientType" type="xs:string"/>
+                <xs:element name="ingredientCalories" type="xs:decimal"/>
+
+                <xs:element name="ingredientCostPerQuantity">
+                <xs:complexType>
+                <xs:sequence>
+
+                    <xs:element name="ingredientCost">
+                    <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+                    
+                        <xs:attribute name="costUnit">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="zl|eur"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:extension>
+                    </xs:simpleContent>
+                    </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="ingredientQuantity">
+                    <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base="xs:decimal">
+
+                        <xs:attribute name="quantityUnit">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
+                    </xs:extension>
+                    </xs:simpleContent>
+                    </xs:complexType>
+                    </xs:element>
+
+                </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+
+                <xs:attribute name="ingredientID">
+                <xs:simpleType>
+                <xs:restriction base="xs:string">
+                <xs:pattern value="i\d{5}"/>
+                </xs:restriction>
+                </xs:simpleType>
+                </xs:attribute>
+
+                <xs:attribute name="isAllergen">
+                <xs:simpleType>
+                <xs:restriction base="xs:string">
+                <xs:pattern value="yes|no"/>
+                </xs:restriction>
+                </xs:simpleType>
+                </xs:attribute>
+
+            </xs:complexType>
+            </xs:element>
+
+        </xs:sequence>
+        </xs:complexType>
+        </xs:element>
+
+    </xs:sequence>
+    </xs:complexType>
+    </xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element> 
+
+</xs:schema>
