@@ -143,6 +143,15 @@
                         </xs:element>
 
                     </xs:sequence>
+
+                        <xs:attribute name="dishIngredientID">
+                        <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                        <xs:pattern value="i\d{5}"/>
+                        </xs:restriction>
+                        </xs:simpleType>
+                        </xs:attribute>
+
                     </xs:complexType>
                     </xs:element>
 
@@ -254,6 +263,18 @@
 
     </xs:sequence>
     </xs:complexType>
+
+        <xs:key name="keyIngredientID">
+            <xs:selector xpath="./ingredients/ingredient"/>
+            <xs:field xpath="@ingredientID"/>
+        </xs:key>
+
+        
+        <xs:keyref name="refIngredientID" refer="keyIngredientID">
+            <xs:selector xpath="./recipes/recipe"/>
+            <xs:field xpath="@dishIngredientID"/>
+        </xs:keyref>
+
     </xs:element>
 
 </xs:sequence>
