@@ -41,13 +41,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="timeUnit" use="required">
-                        <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                        <xs:pattern value="min|h"/>
-                        </xs:restriction>
-                        </xs:simpleType>
-                        </xs:attribute>
+                        <xs:attribute name="unit" type="timeUnit" use="required"/>
 
                     </xs:extension>
                     </xs:simpleContent>
@@ -59,13 +53,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="timeUnit" use="required">
-                        <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                        <xs:pattern value="min|h"/>
-                        </xs:restriction>
-                        </xs:simpleType>
-                        </xs:attribute>
+                        <xs:attribute name="unit" type="timeUnit" use="required"/>
 
                     </xs:extension>
                     </xs:simpleContent>
@@ -77,13 +65,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:integer">
 
-                        <xs:attribute name="tempUnit" use="required">
-                        <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                        <xs:pattern value="°C|F"/>
-                        </xs:restriction>
-                        </xs:simpleType>
-                        </xs:attribute>
+                        <xs:attribute name="unit" type="tempUnit" use="required"/>
 
                     </xs:extension>
                     </xs:simpleContent>
@@ -129,13 +111,7 @@
                         <xs:simpleContent>
                         <xs:extension base="xs:decimal">
 
-                            <xs:attribute name="quantityUnit" use="required">
-                            <xs:simpleType>
-                            <xs:restriction base="xs:string">
-                            <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
-                            </xs:restriction>
-                            </xs:simpleType>
-                            </xs:attribute>
+                            <xs:attribute name="unit" type="quantityUnit" use="required"/>
 
                         </xs:extension>
                         </xs:simpleContent>
@@ -197,13 +173,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:decimal">
                     
-                        <xs:attribute name="costUnit" use="required">
-                        <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                        <xs:pattern value="zl|eur"/>
-                        </xs:restriction>
-                        </xs:simpleType>
-                        </xs:attribute>
+                        <xs:attribute name="unit" type="costUnit" use="required"/>
 
                     </xs:extension>
                     </xs:simpleContent>
@@ -215,13 +185,7 @@
                     <xs:simpleContent>
                     <xs:extension base="xs:decimal">
 
-                        <xs:attribute name="quantityUnit" use="required">
-                        <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                        <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
-                        </xs:restriction>
-                        </xs:simpleType>
-                        </xs:attribute>
+                        <xs:attribute name="unit" type="quantityUnit" use="required"/>
 
                     </xs:extension>
                     </xs:simpleContent>
@@ -276,5 +240,33 @@
 </xs:sequence>
 </xs:complexType>
 </xs:element> 
+
+<!-- UNIT TYPES -->
+
+<xs:simpleType name="quantityUnit">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="g|kg|ml|l|teaspoon|spoon|ea"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="timeUnit">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="min|h"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="costUnit">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="zl|eur"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="tempUnit">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="°C|F"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- / UNIT TYPES -->
 
 </xs:schema>

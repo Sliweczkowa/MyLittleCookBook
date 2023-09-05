@@ -18,54 +18,54 @@
                     <dishName>Snickerdoodles</dishName>
                     <dishType>vegetarian</dishType>
                     <!-- carnivore/vegetarian/vegan -->
-                    <prepTime timeUnit="h">2</prepTime>
-                    <bakingTime timeUnit="min">15</bakingTime>
-                    <bakingTemp tempUnit="°C">180</bakingTemp>
+                    <prepTime unit="h">2</prepTime>
+                    <bakingTime unit="min">15</bakingTime>
+                    <bakingTemp unit="°C">180</bakingTemp>
                     <dishQuantity>30</dishQuantity>
                     <dishSource>https://mojewypieki.com/przepis/snickerdoodles</dishSource>
                 </dishInfo>
 
                 <dishChangeable>
                     <lastDateMade>2023-08-31</lastDateMade>
-                    <!-- <dishCost costUnit="zl"></dishCost> -->
+                    <!-- <dishCost unit="zl"></dishCost> -->
                 </dishChangeable>
 
                 <dishIngredients>
                     <ingredient dishIngredientID="i00001">
                         <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
+                        <ingredientQuantity unit="g">250</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00002">
                         <ingredientName>Nutmeg</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">0.5</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00003">
                         <ingredientName>Baking powder</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">0.75</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">0.75</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00004">
                         <ingredientName>Salt</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">0.5</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">0.5</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00005">
                         <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
+                        <ingredientQuantity unit="g">125</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00006">
                         <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity quantityUnit="g">100</ingredientQuantity>
+                        <ingredientQuantity unit="g">100</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00007">
                         <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity quantityUnit="ea">1</ingredientQuantity>
+                        <ingredientQuantity unit="ea">1</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00008">
                         <ingredientName>Vanilla extract</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">1</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00009">
                         <ingredientName>Cinnamon</ingredientName>
-                        <ingredientQuantity quantityUnit="spoon">1</ingredientQuantity>
+                        <ingredientQuantity unit="spoon">1</ingredientQuantity>
                     </ingredient>
                 </dishIngredients>
             </recipe>
@@ -75,9 +75,9 @@
                     <dishName>Brownie</dishName>
                     <dishType>vegetarian</dishType>
                     <!-- carnivore/vegetarian/vegan -->
-                    <prepTime timeUnit="h">2</prepTime>
-                    <bakingTime timeUnit="min">30</bakingTime>
-                    <bakingTemp tempUnit="°C">160</bakingTemp>
+                    <prepTime unit="h">2</prepTime>
+                    <bakingTime unit="min">30</bakingTime>
+                    <bakingTemp unit="°C">160</bakingTemp>
                     <dishQuantity>20</dishQuantity>
                     <dishSource>https://www.kwestiasmaku.com/desery/ciasta/czekoladowe_brownie/przepis.html</dishSource>
                 </dishInfo>
@@ -85,27 +85,27 @@
                 <dishIngredients>
                     <ingredient dishIngredientID="i00005">
                         <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+                        <ingredientQuantity unit="g">200</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00010">
                         <ingredientName>Dark chocolate</ingredientName>
-                        <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+                        <ingredientQuantity unit="g">200</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00007">
                         <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity quantityUnit="ea">3</ingredientQuantity>
+                        <ingredientQuantity unit="ea">3</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00006">
                         <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity quantityUnit="g">250</ingredientQuantity>
+                        <ingredientQuantity unit="g">250</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00001">
                         <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity quantityUnit="g">135</ingredientQuantity>
+                        <ingredientQuantity unit="g">135</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00004">
                         <ingredientName>Salt</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">0.1</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">0.1</ingredientQuantity>
                     </ingredient>
                 </dishIngredients>
             </recipe>
@@ -114,9 +114,9 @@
                 <dishInfo>
                     <dishName>Cotton Japanese Cheesecake</dishName>
                     <dishType>vegetarian</dishType>
-                    <prepTime timeUnit="h">2</prepTime>
-                    <bakingTime timeUnit="min">25</bakingTime>
-                    <bakingTemp tempUnit="°C">140</bakingTemp>
+                    <prepTime unit="h">2</prepTime>
+                    <bakingTime unit="min">25</bakingTime>
+                    <bakingTemp unit="°C">140</bakingTemp>
                     <dishQuantity>6</dishQuantity>
                     <dishSource>https://www.youtube.com/watch?v=DueW3q1AFoM&amp;t=672s</dishSource>
                 </dishInfo>
@@ -128,39 +128,39 @@
                 <dishIngredients>
                     <ingredient dishIngredientID="i00011">
                         <ingredientName>Biscuit</ingredientName>
-                        <ingredientQuantity quantityUnit="ea">6</ingredientQuantity>
+                        <ingredientQuantity unit="ea">6</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00005">
                         <ingredientName>Butter</ingredientName>
-                        <ingredientQuantity quantityUnit="g">70</ingredientQuantity>
+                        <ingredientQuantity unit="g">70</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00012">
                         <ingredientName>Philadelphia</ingredientName>
-                        <ingredientQuantity quantityUnit="g">110</ingredientQuantity>
+                        <ingredientQuantity unit="g">110</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00013">
                         <ingredientName>Milk</ingredientName>
-                        <ingredientQuantity quantityUnit="ml">75</ingredientQuantity>
+                        <ingredientQuantity unit="ml">75</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00007">
                         <ingredientName>Egg</ingredientName>
-                        <ingredientQuantity quantityUnit="ea">3</ingredientQuantity>
+                        <ingredientQuantity unit="ea">3</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00001">
                         <ingredientName>Wheat flour</ingredientName>
-                        <ingredientQuantity quantityUnit="g">30</ingredientQuantity>
+                        <ingredientQuantity unit="g">30</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00014">
                         <ingredientName>Potato starch</ingredientName>
-                        <ingredientQuantity quantityUnit="g">20</ingredientQuantity>
+                        <ingredientQuantity unit="g">20</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00006">
                         <ingredientName>Sugar</ingredientName>
-                        <ingredientQuantity quantityUnit="g">60</ingredientQuantity>
+                        <ingredientQuantity unit="g">60</ingredientQuantity>
                     </ingredient>
                     <ingredient dishIngredientID="i00008">
                         <ingredientName>Vanilla extract</ingredientName>
-                        <ingredientQuantity quantityUnit="teaspoon">1</ingredientQuantity>
+                        <ingredientQuantity unit="teaspoon">1</ingredientQuantity>
                     </ingredient>
                 </dishIngredients>
             </recipe>
@@ -172,8 +172,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>350</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">3.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+                    <ingredientCost unit="zl">3.48</ingredientCost>
+                    <ingredientQuantity unit="kg">1</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00002" isAllergen="no">
@@ -181,8 +181,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>52.5</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">1.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">10</ingredientQuantity>
+                    <ingredientCost unit="zl">1.48</ingredientCost>
+                    <ingredientQuantity unit="g">10</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00003" isAllergen="no">
@@ -190,8 +190,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>9.3</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">0.79</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">15</ingredientQuantity>
+                    <ingredientCost unit="zl">0.79</ingredientCost>
+                    <ingredientQuantity unit="g">15</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00004" isAllergen="no">
@@ -199,8 +199,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>0</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">5.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+                    <ingredientCost unit="zl">5.48</ingredientCost>
+                    <ingredientQuantity unit="kg">1</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00005" isAllergen="yes">
@@ -208,8 +208,8 @@
                 <ingredientType>vegetarian</ingredientType>
                 <ingredientCalories>1506</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">5.99</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">200</ingredientQuantity>
+                    <ingredientCost unit="zl">5.99</ingredientCost>
+                    <ingredientQuantity unit="g">200</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00006" isAllergen="no">
@@ -217,8 +217,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>400</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">5.78</ingredientCost>
-                    <ingredientQuantity quantityUnit="kg">1</ingredientQuantity>
+                    <ingredientCost unit="zl">5.78</ingredientCost>
+                    <ingredientQuantity unit="kg">1</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00007" isAllergen="yes">
@@ -226,8 +226,8 @@
                 <ingredientType>vegetarian</ingredientType>
                 <ingredientCalories>760</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">10.99</ingredientCost>
-                    <ingredientQuantity quantityUnit="ea">10</ingredientQuantity>
+                    <ingredientCost unit="zl">10.99</ingredientCost>
+                    <ingredientQuantity unit="ea">10</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00008" isAllergen="no">
@@ -235,8 +235,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>86.4</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">7.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="ml">30</ingredientQuantity>
+                    <ingredientCost unit="zl">7.48</ingredientCost>
+                    <ingredientQuantity unit="ml">30</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00009" isAllergen="no">
@@ -244,8 +244,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>37.1</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">1.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">15</ingredientQuantity>
+                    <ingredientCost unit="zl">1.48</ingredientCost>
+                    <ingredientQuantity unit="g">15</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00010" isAllergen="yes">
@@ -253,8 +253,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>446.4</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">3.98</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">80</ingredientQuantity>
+                    <ingredientCost unit="zl">3.98</ingredientCost>
+                    <ingredientQuantity unit="g">80</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00011" isAllergen="yes">
@@ -262,8 +262,8 @@
                 <ingredientType>vegetarian</ingredientType>
                 <ingredientCalories>968</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">2.68</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">220</ingredientQuantity>
+                    <ingredientCost unit="zl">2.68</ingredientCost>
+                    <ingredientQuantity unit="g">220</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00012" isAllergen="yes">
@@ -271,8 +271,8 @@
                 <ingredientType>vegetarian</ingredientType>
                 <ingredientCalories>282.5</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">7.48</ingredientCost>
-                    <ingredientQuantity quantityUnit="g">125</ingredientQuantity>
+                    <ingredientCost unit="zl">7.48</ingredientCost>
+                    <ingredientQuantity unit="g">125</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00013" isAllergen="yes">
@@ -280,8 +280,8 @@
                 <ingredientType>vegetarian</ingredientType>
                 <ingredientCalories>600</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">3.98</ingredientCost>
-                    <ingredientQuantity quantityUnit="l">1</ingredientQuantity>
+                    <ingredientCost unit="zl">3.98</ingredientCost>
+                    <ingredientQuantity unit="l">1</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
             <ingredient ingredientID="i00014" isAllergen="no">
@@ -289,8 +289,8 @@
                 <ingredientType>vegan</ingredientType>
                 <ingredientCalories>1620</ingredientCalories>
                 <ingredientCostPerQuantity>
-                    <ingredientCost costUnit="zl">4.29</ingredientCost>
-                    <ingredientQuantity quantityUnit="kg">0.5</ingredientQuantity>
+                    <ingredientCost unit="zl">4.29</ingredientCost>
+                    <ingredientQuantity unit="kg">0.5</ingredientQuantity>
                 </ingredientCostPerQuantity>
             </ingredient>
         </ingredients>

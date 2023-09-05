@@ -74,7 +74,7 @@ cookbook pageContent recipes recipe dishInfo bakingTime::before
 
 cookbook pageContent recipes recipe dishInfo prepTime::after, cookbook pageContent recipes recipe dishInfo bakingTime::after
 {
-	content: attr(timeUnit);
+	content: attr(unit);
 }
 
 cookbook pageContent recipes recipe dishInfo bakingTemp::before
@@ -84,7 +84,7 @@ cookbook pageContent recipes recipe dishInfo bakingTemp::before
 
 cookbook pageContent recipes recipe dishInfo bakingTemp::after
 {
-	content: attr(tempUnit);
+	content: attr(unit);
 }
 
 cookbook pageContent recipes recipe dishInfo dishQuantity::before
@@ -126,7 +126,7 @@ cookbook pageContent recipes recipe dishIngredients ingredient ingredientName::a
 
 cookbook pageContent recipes recipe dishIngredients ingredient ingredientQuantity::after
 {
-    content: attr(quantityUnit);
+    content: attr(unit);
 }
 
 
@@ -171,10 +171,10 @@ cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredient
 
 cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredientCost::after
 {
-	content: attr(costUnit) "/";
+	content: attr(unit) "/";
 }
 
 cookbook pageContent ingredients ingredient ingredientCostPerQuantity ingredientQuantity::after
 {
-	content: attr(quantityUnit);
+	content: attr(unit);
 }
