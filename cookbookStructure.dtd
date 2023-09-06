@@ -22,13 +22,13 @@
                 <!ELEMENT lastDateMade (#PCDATA)>
             <!ELEMENT dishIngredients (dishIngredient*)>
                 <!ELEMENT dishIngredient (dishIngredientName, dishIngredientQuantity)>
-                <!ATTLIST dishIngredient dishIngredientID CDATA #REQUIRED>
+                <!ATTLIST dishIngredient dishIngredientID ID #REQUIRED>
                     <!ELEMENT dishIngredientName (#PCDATA)>
                     <!ELEMENT dishIngredientQuantity (#PCDATA)>
                         <!ATTLIST dishIngredientQuantity unit (g|kg|ml|l|teaspoon|spoon|ea) #REQUIRED>
     <!ELEMENT ingredients (ingredient*)>
     <!ELEMENT ingredient (ingredientName, ingredientType, ingredientCalories?, ingredientCostPerQuantity*)>
-        <!ATTLIST ingredient ingredientID CDATA #REQUIRED>
+        <!ATTLIST ingredient ingredientID ID #REQUIRED>
         <!ATTLIST ingredient isAllergen (yes|no) #REQUIRED>
         <!ELEMENT ingredientName (#PCDATA)>
         <!ELEMENT ingredientType (#PCDATA)>
