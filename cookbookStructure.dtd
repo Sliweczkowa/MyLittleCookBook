@@ -22,7 +22,7 @@
                 <!ELEMENT lastDateMade (#PCDATA)>
             <!ELEMENT dishIngredients (dishIngredient*)>
                 <!ELEMENT dishIngredient (dishIngredientName, dishIngredientQuantity)>
-                <!ATTLIST dishIngredient dishIngredientID ID #REQUIRED>
+                <!ATTLIST dishIngredient dishIngredientID IDREF #REQUIRED>
                     <!ELEMENT dishIngredientName (#PCDATA)>
                     <!ELEMENT dishIngredientQuantity (#PCDATA)>
                         <!ATTLIST dishIngredientQuantity unit (g|kg|ml|l|teaspoon|spoon|ea) #REQUIRED>
